@@ -140,9 +140,9 @@ rental/
 
 ### Sample Users
 
-- **Email**: `john.doe@example.com` | **Password**: `Password123`
-- **Email**: `jane.smith@example.com` | **Password**: `Password123`
-- **Email**: `mike.johnson@example.com` | **Password**: `Password123`
+- **Email**: `lingolingoskii@example.com` | **Password**: `Password123`
+- **Email**: `mwaurajyvin@example.com` | **Password**: `Password123`
+- **Email**: `mkristoh@example.com` | **Password**: `Password123`
 
 ### Sample Cars
 
