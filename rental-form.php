@@ -1,5 +1,5 @@
 <?php
-require_once 'php/config.php';
+require_once 'php-config.php';
 
 // Check if user is logged in
 if (!is_logged_in()) {
@@ -34,7 +34,7 @@ $user = get_user_by_id($_SESSION['user_id']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent Car - Mkristoh Rental</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-light">
@@ -100,7 +100,7 @@ $user = get_user_by_id($_SESSION['user_id']);
                         </div>
 
                         <!-- Rental Form -->
-                        <form action="php/process-rental.php" method="POST" id="rentalForm">
+                        <form action="process-rental.php" method="POST" id="rentalForm">
                             <input type="hidden" name="car_id" value="<?php echo $car['id']; ?>">
                             
                             <div class="row">

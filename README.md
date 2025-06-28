@@ -67,26 +67,25 @@ A full-featured car rental website built with HTML, CSS, JavaScript, PHP, and Bo
 
 ```
 rental/
-├── index.html              # Homepage
-├── login.html              # Login page
-├── register.html           # Registration page
-├── dashboard.php           # User dashboard
-├── rental-form.php         # Car rental form
-├── youngyou.sql            # Database file
-├── css/
-│   └── style.css          # Custom styles
-├── js/
-│   └── main.js            # JavaScript functionality
-├── php/
-│   ├── config.php         # Database configuration
-│   ├── register.php       # User registration processing
-│   ├── login.php          # User login processing
-│   ├── logout.php         # Logout processing
-│   ├── update-profile.php # Profile update processing
-│   └── process-rental.php # Rental booking processing
-├── admin/
-│   └── dashboard.php      # Admin dashboard
-└── README.md              # This file
+├── index.php
+├── login.php
+├── register.php
+├── dashboard.php
+├── admin-dashboard.php
+├── rental-form.php
+├── footer.php
+├── style.css
+├── main.js
+├── php-config.php
+├── php-login.php
+├── php-register.php
+├── process-rental.php
+├── cancel-rental.php
+├── update-profile.php
+├── logout.php
+├── setup-database.php
+├── youngyou.sql
+└── README.md
 ```
 
 ## Database Schema
@@ -140,9 +139,9 @@ rental/
 
 ### Sample Users
 
-- **Email**: `lingolingoskii@example.com` | **Password**: `Password123`
-- **Email**: `mwaurajyvin@example.com` | **Password**: `Password123`
-- **Email**: `mkristoh@example.com` | **Password**: `Password123`
+- **Email**: `john.doe@example.com` | **Password**: `Password123`
+- **Email**: `jane.smith@example.com` | **Password**: `Password123`
+- **Email**: `mike.johnson@example.com` | **Password**: `Password123`
 
 ### Sample Cars
 
@@ -192,13 +191,13 @@ rental/
 
 ### Modifying Styles
 
-- Edit `css/style.css` to customize the appearance
+- Edit `style.css` to customize the appearance
 - The website uses Bootstrap 5 for responsive design
 - Custom CSS classes are available for specific styling
 
 ### Database Configuration
 
-- Edit `php/config.php` to modify database settings
+- Edit `php-config.php` to modify database settings
 - Default settings work with XAMPP's default configuration
 
 ## Troubleshooting
@@ -208,58 +207,4 @@ rental/
 1. **Database Connection Error**
 
    - Ensure MySQL is running in XAMPP
-   - Check database credentials in `php/config.php`
-   - Import the `youngyou.sql` file properly
-
-2. **Page Not Found**
-
-   - Verify project is in correct directory (`htdocs/rental/`)
-   - Check Apache is running in XAMPP
-
-3. **Login Issues**
-
-   - Clear browser cache and cookies
-   - Check if session is working properly
-   - Verify database is properly imported
-
-4. **Image Not Loading**
-
-   - Ensure internet connection for external images
-   - Check image URLs in car data
-
-5. **Database Import Issues**
-   - Ensure MySQL service is running
-   - Check if you have proper permissions
-   - Try importing the SQL file manually in phpMyAdmin
-
-### Support
-
-For technical support or questions, please check:
-
-- XAMPP documentation
-- PHP documentation
-- MySQL documentation
-
-## Quick Start Guide
-
-1. **Install XAMPP** and start Apache + MySQL
-2. **Place project** in `C:\xampp\htdocs\rental\`
-3. **Import database** using `youngyou.sql` in phpMyAdmin
-4. **Login as admin** using the default credentials
-5. **Start using** the rental system!
-
-## License
-
-This project is created for educational purposes. Feel free to modify and use as needed.
-
-## Credits
-
-- **Bootstrap 5** - Frontend framework
-- **Font Awesome** - Icons
-- **Unsplash** - Car images
-- **PHP** - Backend language
-- **MySQL** - Database system
-
----
-
-**Mkristoh Rental** - Premium Car Rental Services
+   - Check database credentials in `php-config.php`
